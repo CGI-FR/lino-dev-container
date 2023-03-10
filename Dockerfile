@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with LINO.  If not, see <http://www.gnu.org/licenses/>.
 
-FROM adrienaury/go-devcontainer:v0.6-debian
+FROM adrienaury/go-devcontainer:v2.0-debian
 
 USER root
 
