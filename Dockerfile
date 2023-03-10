@@ -67,7 +67,7 @@ USER vscode
 
 # Db2 (must run as vscode)
 RUN go get -d github.com/ibmdb/go_ibm_db && \
-    cd /home/vscode/go/pkg/mod/github.com/ibmdb/go_ibm_db@v0.4.1/installer && \
+    cd /home/vscode/go/pkg/mod/github.com/ibmdb/go_ibm_db@v0.4.2/installer && \
     go run setup.go
 
 ENV DB2HOME=/home/vscode/go/pkg/mod/github.com/ibmdb/clidriver
