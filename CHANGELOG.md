@@ -14,6 +14,11 @@ Types of changes
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## [v0.1.0]
+## [v2.0.0]
+
+- `Changed` golang version to 1.24.1
+- `Removed` oracle instant client
+
+## [v1.0.0]
 
 - `Added` initial version

@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with LINO.  If not, see <http://www.gnu.org/licenses/>.
 
-FROM adrienaury/go-devcontainer:v2.0-debian
+FROM adrienaury/go-devcontainer:v6.0-debian
 
 USER root
 
@@ -35,13 +35,6 @@ ENV https_proxy ${https_proxy:-}
 ENV no_proxy ${no_proxy:-}
 
 ENV DEBIAN_FRONTEND noninteractive
-
-# Oracle
-RUN wget -O /tmp/instantclient-basic-linux-x64.zip https://download.oracle.com/otn_software/linux/instantclient/193000/instantclient-basic-linux.x64-19.3.0.0.0dbru.zip && \
-    mkdir -p /usr/lib/oracle && \
-    unzip /tmp/instantclient-basic-linux-x64.zip -d /usr/lib/oracle && \
-    ldconfig -v /usr/lib/oracle/instantclient_19_3 && \
-    ldd /usr/lib/oracle/instantclient_19_3/libclntsh.so
 
 ARG VERSION_DCM=0.1.0
 RUN wget -O- -nv https://github.com/adrienaury/docker-credential-mock/releases/download/${VERSION_DCM}/docker-credential-mock_${VERSION_DCM}_linux_amd64.tar.gz | tar -xz -C /usr/local/bin/ docker-credential-mock \
