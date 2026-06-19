@@ -14,6 +14,10 @@ Types of changes
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
+## [v3.0.0]
+
+- `Changed` golang version to 1.25.2
+
 ## [v2.0.0]
 
 - `Changed` golang version to 1.24.1
